@@ -297,8 +297,8 @@ class ChainCRF(Layer):
         mask = None
         
         
-        if self.inbound_nodes:
-            mask = self.inbound_nodes[0].input_masks[0]
+        if self._inbound_nodes:
+            mask = self._inbound_nodes[0].input_masks[0]
 
         return mask
 
